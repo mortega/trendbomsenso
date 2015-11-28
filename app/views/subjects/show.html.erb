@@ -1,22 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @subject.title %>
+  <h1><%= @subject.title %></h1>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @subject.description %>
+  <i><%= @subject.description %></i>
 </p>
 
 <p>
-  <strong>Image:</strong>
     <img src="<%= @subject.image %>">
 </p>
 
-<%= link_to 'Back', subjects_path %>
 
 <%= render template: 'opinions/index' %>
 
-
+<%= link_to 'Voltar', subjects_path %>
