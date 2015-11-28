@@ -12,8 +12,11 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @subject.image %>
+    <img src="<%= @subject.image %>">
 </p>
 
-<%= link_to 'Edit', edit_subject_path(@subject) %> |
 <%= link_to 'Back', subjects_path %>
+
+<%= render template: 'opinions/index' %>
+
+
